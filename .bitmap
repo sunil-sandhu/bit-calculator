@@ -15,6 +15,12 @@
         "mainFile": "index.ts",
         "rootDir": "calculator/app"
     },
+    "flex-row": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "base-ui/flex-row"
+    },
     "ui/app": {
         "scope": "",
         "version": "",
@@ -32,6 +38,12 @@
         "version": "",
         "mainFile": "index.ts",
         "rootDir": "calculator/ui/calculator-button"
+    },
+    "ui/calculator-container": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "calculator/ui/calculator-container"
     },
     "$schema-version": "14.9.0"
 }
