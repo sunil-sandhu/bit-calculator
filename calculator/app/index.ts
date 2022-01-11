@@ -1,1 +1,1 @@
-export { CalculatorApp } from './app';
+export { default } from './app';

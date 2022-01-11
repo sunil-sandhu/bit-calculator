@@ -52,7 +52,6 @@ export default function CalculatorButton({
     <Button
       onClick={onClick}
       value={value}
-      name={value}
       className={classNames(styles.calculatorButton, styles[type])}
     >
       {value}

@@ -7,10 +7,6 @@ export type ScreenProps = {
   children?: ReactNode;
 };
 
-export function Screen({ children }: ScreenProps) {
-  return (
-    <div>
-      {children}
-    </div>
-  );
+export default function Screen({ children }: ScreenProps) {
+  return <div>{children}</div>;
 }

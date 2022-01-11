@@ -8,6 +8,7 @@ export const BasicCalculatorContainer = () => (
   <CalculatorContainer>
     {calculatorButtons.map((button) => (
       <CalculatorButton
+        key={button.value}
         type={button.type}
         onClick={button.func}
         value={button.value}
