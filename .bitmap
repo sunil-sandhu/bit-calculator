@@ -16,8 +16,8 @@
         "rootDir": "calculator/app"
     },
     "flex-row": {
-        "scope": "sunilsandhu.calculator",
-        "version": "0.0.1",
+        "scope": "",
+        "version": "",
         "defaultScope": "sunilsandhu.base-ui",
         "mainFile": "index.ts",
         "rootDir": "base-ui/flex-row"
@@ -51,6 +51,12 @@
         "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "calculator/ui/calculator-container"
+    },
+    "ui/calculator-screen": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "calculator/ui/calculator-screen"
     },
     "$schema-version": "14.9.0"
 }

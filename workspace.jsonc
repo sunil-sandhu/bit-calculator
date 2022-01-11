@@ -73,7 +73,7 @@
   "sunilsandhu.calculator/app/app": {},
 
   "teambit.workspace/variants": {
-    "{ui/**}, {pages/**}": {
+    "{base-ui/**}, {ui/**}, {pages/**}": {
       "teambit.react/react": {}
     },
     "{themes/**}": {

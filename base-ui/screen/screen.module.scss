@@ -1,0 +1,12 @@
+* {box-sizing: border-box;}
+
+.screen {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    border: 1px solid;
+    margin: 0 auto;
+    min-height: 40px
+}
+

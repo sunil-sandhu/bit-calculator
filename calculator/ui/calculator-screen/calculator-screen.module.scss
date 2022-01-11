@@ -1,0 +1,15 @@
+
+.calculatorScreen {
+    background: #f0fbf0;
+    border: 1px solid #e2e7e1;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row;
+    font-family: monospace;
+    font-size: 2rem;
+    height: 80px;
+    justify-content: center;
+    margin: 0 auto 10px;
+    padding: 10px 20px;
+    width: calc(100% - 60px);
+}
