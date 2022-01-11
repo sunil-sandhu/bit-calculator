@@ -2,22 +2,60 @@ import React from 'react';
 import Button from '@teambit/base-ui.input.button';
 import styles from './calculator-button.module.scss';
 import classNames from 'classnames';
+import {
+  CalculatorButtonTypes,
+  CalculatorValues,
+} from './calculator-button.types';
 
 export type CalculatorButtonProps = {
   /**
    * a text to be rendered in the component.
    */
-  text: string;
-  type: 'number' | 'function' | 'equals' | 'memory';
+  type: CalculatorButtonTypes;
+  // value: keyof CalculatorValues;
+  value:
+    | '0'
+    | '1'
+    | '2'
+    | '3'
+    | '4'
+    | '5'
+    | '6'
+    | '7'
+    | '8'
+    | '9'
+    | 'M+'
+    | 'M-'
+    | 'MR'
+    | 'MC'
+    | '+/-'
+    | 'sqrt'
+    | '%'
+    | '1/x'
+    | 'CE'
+    | '.'
+    | '/'
+    | 'x'
+    | '-'
+    | '+'
+    | '='
+    | string;
+  onClick: () => void;
 };
 
 export default function CalculatorButton({
-  text,
-  type = 'number',
+  value,
+  type = CalculatorButtonTypes.Number,
+  onClick,
 }: CalculatorButtonProps) {
   return (
-    <Button className={classNames(styles.calculatorButton, styles[type])}>
-      {text}
+    <Button
+      onClick={onClick}
+      value={value}
+      name={value}
+      className={classNames(styles.calculatorButton, styles[type])}
+    >
+      {value}
     </Button>
   );
 }

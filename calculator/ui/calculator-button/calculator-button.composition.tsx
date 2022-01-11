@@ -1,18 +1,35 @@
 import React from 'react';
+import { CalculatorButtonTypes } from './calculator-button.types';
 import CalculatorButton from './calculator-button';
 
 export const BasicCalculatorNumberButton = () => (
-  <CalculatorButton text="1" type="number" />
+  <CalculatorButton
+    value="1"
+    onClick={() => null}
+    type={CalculatorButtonTypes.Number}
+  />
 );
 
 export const BasicCalculatorFunctionButton = () => (
-  <CalculatorButton text="%" type="function" />
+  <CalculatorButton
+    value="%"
+    onClick={() => null}
+    type={CalculatorButtonTypes.Function}
+  />
 );
 
 export const BasicCalculatorMemoryButton = () => (
-  <CalculatorButton text="M+" type="memory" />
+  <CalculatorButton
+    value="M+"
+    onClick={() => null}
+    type={CalculatorButtonTypes.Memory}
+  />
 );
 
 export const BasicCalculatorEqualsButton = () => (
-  <CalculatorButton text="=" type="equals" />
+  <CalculatorButton
+    value="="
+    onClick={() => null}
+    type={CalculatorButtonTypes.Equals}
+  />
 );
